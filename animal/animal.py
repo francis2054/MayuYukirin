@@ -33,7 +33,7 @@ class Animal(commands.Cog):
         await self.session.close()
 
     @commands.command()
-    @commands.cooldown(1, 60, commands.BucketType.guild)
+#    @commands.cooldown(1, 60, commands.BucketType.guild)
     async def cat(self, ctx):
         """Shows a cat"""
         try:
@@ -70,7 +70,7 @@ class Animal(commands.Cog):
         await ctx.send("\n".join(results))
 
     @commands.command()
-    @commands.cooldown(1, 60, commands.BucketType.guild)
+#    @commands.cooldown(1, 60, commands.BucketType.guild)
     async def dog(self, ctx, breed: str):
         """Shows a breed of dog.
         
@@ -170,7 +170,7 @@ class Animal(commands.Cog):
         await menu(ctx, embed_pages)
 
     @commands.command()
-    @commands.cooldown(1, 60, commands.BucketType.guild)
+#    @commands.cooldown(1, 60, commands.BucketType.guild)
     async def fox(self, ctx):
         """Shows a fox"""
         try:
